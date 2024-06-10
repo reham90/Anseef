@@ -1567,7 +1567,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   width: 100%;
   justify-content: center;
   height: auto;
-  padding: 44px;
+  padding: 20px;
 }
   .navgition {
     display: block;
