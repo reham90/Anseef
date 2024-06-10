@@ -555,6 +555,7 @@ justify-content: center;
   font-family: "Bahij_TheSansArabic-ExtraBold";
   margin: 0;
   text-align: center;
+  max-width: 650px;
 }
 .main-slider .swiper-btn {
   position: absolute;
@@ -1447,6 +1448,7 @@ html[dir="rtl"] .footer-accordion.active:after {
   .main-title{
     font-size: 45px;
     padding: 0 20px;
+    max-width: 100%;
   }
   .main-slider-img-cover{
     background: rgba(0, 0, 0, 0.3);
@@ -1942,7 +1944,7 @@ margin-bottom: 15px;
   .social-list {
     margin-top: 0;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
   .footer:after {
     top: 0;
