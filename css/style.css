@@ -906,8 +906,13 @@ overflow: hidden;
   position: relative;
 }
 
-
-
+.projects-slider .swiper-slide{
+  width: 263px;
+  margin-left: 28px;
+}
+html[dir="ltr"] .projects-slider .swiper-slide{
+  margin-left: 0;
+}
 
 
 .services-slider .swiper-pagination {
@@ -1024,9 +1029,12 @@ overflow: hidden;
   width: 100%;
  object-fit: fill;
 }
-.swiper-slide-active .project-item,
-.swiper-slide-next .project-item, .swiper-slide-visible .project-item  {
+.swiper-slide-active .project-item, .swiper-slide .project-item,
+.swiper-slide-next .project-item  {
   opacity: 1;
+}
+.swiper-slide-duplicate-prev .project-item{
+  opacity: 0.2;
 }
 .projects-text {
   position: relative;
