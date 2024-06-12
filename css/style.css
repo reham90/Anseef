@@ -235,8 +235,7 @@ header {
 	content: "";
 	font-family: "Line Awesome Free";
 	font-size: 10px;
-  position: absolute;
-  inset-inline-end: 0;
+ 
  
 	font-weight: 700;
 }
@@ -353,8 +352,30 @@ header {
 	padding: 0 15px;
 	transition: all 0.3s ease-in-out;
 }
-
-
+.inner-page-top-header{
+  background-color: var(--main-color);
+  padding-bottom: 20px;
+}
+.inner-page-top-header .contact-link{
+  background-color: #fff;
+  color: var(--main-color);
+  z-index: 2;
+}
+.inner-page-top-header .contact-link:hover{
+  background-color: var(--sec-color);
+  color: #fff;
+}
+.inner-page-top-header .contact-link:after{
+  background-color: #fff;
+  opacity: 0.102;
+}
+.inner-page-top-header .contact-link:hover:after{
+  background-color: var(--sec-color);
+  opacity: 0.102;
+}
+.inner-page-body{
+  padding-top: 104px;
+}
 
 .client-img-block {
   width: 100%;
@@ -1445,11 +1466,18 @@ html[dir="rtl"] .footer-accordion.active:after {
 		width: unset;
 		margin-inline-start: 13px;
 	}
+  .menu-item-has-children a::after{
+    position: absolute;
+    inset-inline-end: 0;
+  }
   .main-title{
     font-size: 45px;
     padding: 0 20px;
     max-width: 100%;
   }
+  .inner-page-body {
+    padding-top: 78px;
+}
   .main-slider-img-cover{
     background: rgba(0, 0, 0, 0.3);
   }
